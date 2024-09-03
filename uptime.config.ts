@@ -11,9 +11,7 @@ const pageConfig = {
 }
 
 const workerConfig = {
-  // Write KV at most every 3 minutes unless the status changed.
   kvWriteCooldownMinutes: 3,
-  // Define all your monitors here
   monitors: [
     // Website bot
     {
@@ -70,13 +68,9 @@ const workerConfig = {
     },
   ],
   notification: {
-    // [Optional] apprise API server URL
     appriseApiServer: "",
-    // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
     recipientUrl: "",
-    // [Optional] timezone used in notification messages, default to "Etc/GMT"
     timeZone: "Asia/Jakarta",
-    // [Optional] grace period in minutes before sending a notification
     gracePeriod: 5,
   },
   callbacks: {
@@ -88,7 +82,6 @@ const workerConfig = {
       timeNow: number,
       reason: string
     ) => {
-      // Handle status change event here
     },
     onIncident: async (
       env: any,
@@ -97,10 +90,7 @@ const workerConfig = {
       timeNow: number,
       reason: string
     ) => {
-      // Handle ongoing incident event here
     },
   },
 }
-
-// Don't forget this, otherwise compilation fails.
 export { pageConfig, workerConfig }
