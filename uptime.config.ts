@@ -28,7 +28,7 @@ const workerConfig = {
       name: 'Bot',
       method: 'GET',
       target: 'https://lastfm.meww.me',
-      expectedCodes: [304],
+      expectedCodes: [200],
       timeout: 10000,
     },
         // REST API Bot
