@@ -26,18 +26,16 @@ const workerConfig = {
     {
       id: 'bot_monitor',
       name: 'Bot',
-      method: 'GET',
-      target: 'https://lastfm.meww.me',
-      expectedCodes: [200],
+      method: 'TCP_PING',
+      target: 'lastfm.meww.me:25565',
       timeout: 10000,
     },
         // REST API Bot
     {
       id: 'restapi_monitor',
       name: 'Rest API',
-      method: 'GET',
-      target: 'https://restapi.meww.me/mewwme',
-      expectedCodes: [200],
+      method: 'TCP_PING',
+      target: 'lastfm.meww.me:25567',
       timeout: 10000,
     },
     // Lavalink
@@ -52,9 +50,8 @@ const workerConfig = {
     {
       id: 'panel_monitor',
       name: 'Panel',
-      method: 'GET',
-      target: 'https://panel.mikoradio.com',
-      expectedCodes: [200],
+      method: 'TCP_PING',
+      target: 'node.mikoradio.com:8080',
       timeout: 10000,
     },
     // Pterodactyl Wings
