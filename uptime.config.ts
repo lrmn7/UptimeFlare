@@ -16,31 +16,58 @@ const workerConfig = {
     // Website bot
     {
       id: 'website_monitor',
-      name: 'Website',
+      name: `Mewwme's Website`,
       method: 'GET',
       target: 'https://meww.me',
       expectedCodes: [200],
       timeout: 30000,
+      statusPageLink: 'https://meww.me',
     },
     // Webserver bot
+    {
+      id: 'bot_monitor',
+      name: 'Discord Bot',
+      method: 'TCP_PING',
+      target: '45.144.225.88:25565',
+      timeout: 30000,
+      statusPageLink: 'https://discord.com/oauth2/authorize?client_id=928711702596423740',
+    },
         // REST API Bot
+    {
+      id: 'restapi_monitor',
+      name: 'RestAPI',
+      method: 'TCP_PING',
+      target: '45.144.225.88:25567',
+      timeout: 30000,
+      statusPageLink: 'https://meww.me',
+    },
     // Lavalink
     {
       id: 'lavalink_monitor',
       name: 'Voice Connection',
       method: 'TCP_PING',
-      target: 'n1.is-a.fun:2555',
+      target: '45.144.225.88:2555',
       timeout: 30000,
+      statusPageLink: 'https://meww.me/support',
     },
     // Pterodactyl Panel
+    {
+      id: 'panel_monitor',
+      name: 'Panel',
+      method: 'TCP_PING',
+      target: '45.144.225.88:8080',
+      timeout: 30000,
+      statusPageLink: 'https://meww.me/support',
+    },
     // Pterodactyl Wings
     {
       id: 'server_monitor',
       name: 'Server',
       method: 'TCP_PING',
-      target: 'node.mikoradio.com:8080',
+      target: '45.144.225.88:8080',
       expectedCodes: [200],
       timeout: 30000,
+      statusPageLink: 'https://meww.me/support',
     },
   ],
   notification: {
