@@ -20,40 +20,19 @@ const workerConfig = {
       method: 'GET',
       target: 'https://meww.me',
       expectedCodes: [200],
-      timeout: 10000,
+      timeout: 30000,
     },
     // Webserver bot
-    {
-      id: 'bot_monitor',
-      name: 'Bot',
-      method: 'TCP_PING',
-      target: 'lastfm.meww.me:25565',
-      timeout: 10000,
-    },
         // REST API Bot
-    {
-      id: 'restapi_monitor',
-      name: 'Rest API',
-      method: 'TCP_PING',
-      target: 'lastfm.meww.me:25567',
-      timeout: 10000,
-    },
     // Lavalink
     {
       id: 'lavalink_monitor',
       name: 'Voice Connection',
       method: 'TCP_PING',
       target: 'n1.is-a.fun:2555',
-      timeout: 10000,
+      timeout: 30000,
     },
     // Pterodactyl Panel
-    {
-      id: 'panel_monitor',
-      name: 'Panel',
-      method: 'TCP_PING',
-      target: 'node.mikoradio.com:8080',
-      timeout: 10000,
-    },
     // Pterodactyl Wings
     {
       id: 'server_monitor',
@@ -61,7 +40,7 @@ const workerConfig = {
       method: 'TCP_PING',
       target: 'node.mikoradio.com:8080',
       expectedCodes: [200],
-      timeout: 5000,
+      timeout: 30000,
     },
   ],
   notification: {
