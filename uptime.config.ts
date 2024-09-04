@@ -23,21 +23,7 @@ const workerConfig = {
       timeout: 10000,
     },
     // Webserver bot
-    {
-      id: 'bot_monitor',
-      name: 'Bot',
-      method: 'TCP_PING',
-      target: 'lastfm.meww.me:25565',
-      timeout: 10000,
-    },
         // REST API Bot
-    {
-      id: 'restapi_monitor',
-      name: 'Rest API',
-      method: 'TCP_PING',
-      target: 'lastfm.meww.me:25567',
-      timeout: 10000,
-    },
     // Lavalink
     {
       id: 'lavalink_monitor',
@@ -47,13 +33,6 @@ const workerConfig = {
       timeout: 10000,
     },
     // Pterodactyl Panel
-    {
-      id: 'panel_monitor',
-      name: 'Panel',
-      method: 'TCP_PING',
-      target: 'node.mikoradio.com:8080',
-      timeout: 10000,
-    },
     // Pterodactyl Wings
     {
       id: 'server_monitor',
