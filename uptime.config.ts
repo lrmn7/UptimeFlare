@@ -38,7 +38,7 @@ const workerConfig = {
       id: 'restapi_monitor',
       name: 'RestAPI',
       method: 'GET',
-      target: 'https://lastfm.yourbe.fun/',
+      target: 'https://status.meww.me/',
       expectedCodes: [200],
       timeout: 30000,
       statusPageLink: 'https://meww.me',
