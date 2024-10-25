@@ -67,7 +67,7 @@ const workerConfig = {
       id: 'server_monitor',
       name: 'Server',
       method: 'TCP_PING',
-      target: '45.144.225.88:8080',
+      target: '194.238.25.194:8080',
       expectedCodes: [200],
       timeout: 30000,
       statusPageLink: 'https://meww.me/support',
