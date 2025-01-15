@@ -3,10 +3,10 @@ const pageConfig = {
   title: "Mewwme's Uptime",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://meww.me/', label: 'Home' },
+    { link: 'https://mewwme.is-a.fun/', label: 'Home' },
     { link: 'https://github.com/mewwme', label: 'GitHub' },
-    { link: 'https://meww.me/support', label: 'Server Support' },
-    { link: 'mailto:support@meww.me', label: 'Email Me', highlight: true },
+    { link: 'https://mewwme.is-a.fun/support', label: 'Server Support' },
+    { link: 'mailto:support-mewwme@is-a.fun', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -18,59 +18,59 @@ const workerConfig = {
       id: 'website_monitor',
       name: `Mewwme's Website`,
       method: 'GET',
-      target: 'https://meww.me',
+      target: 'https://mewwme.is-a.fun',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://meww.me/',
+      statusPageLink: 'https://mewwme.is-a.fun/',
     },
     // Webserver bot
     {
       id: 'bot_monitor',
       name: 'Discord Bot',
       method: 'GET',
-      target: 'https://ws.meww.me/',
+      target: 'https://ws-mewwme.is-a.fun',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://discord.com/oauth2/authorize?client_id=928711702596423740',
+      statusPageLink: 'https://discord.com/oauth2/authorize?client_id=928966154817523723',
     },
         // REST API Bot
     {
       id: 'restapi_monitor',
       name: 'RestAPI',
       method: 'GET',
-      target: 'https://status.meww.me/',
+      target: 'https://104.219.236.211:7013/',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://meww.me',
+      statusPageLink: 'https://status-mewwme.is-a.fun',
     },
     // Lavalink
     {
       id: 'lavalink_monitor',
       name: 'Voice Connection',
       method: 'TCP_PING',
-      target: '89.58.59.59:7015',
+      target: '104.219.236.211:7034',
       timeout: 30000,
-      statusPageLink: 'https://meww.me/support',
+      statusPageLink: 'https://status-mewwme.is-a.fun/support',
     },
     // Pterodactyl Panel
     {
       id: 'panel_monitor',
       name: 'Panel',
       method: 'GET',
-      target: 'https://mikoradio.com/',
+      target: 'https://house.catfein.co.id/',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://meww.me/support',
+      statusPageLink: 'https://status-mewwme.is-a.fun/support',
     },
     // Pterodactyl Wings
     {
       id: 'server_monitor',
       name: 'Server',
-      method: 'TCP_PING',
-      target: '194.238.25.194:8080',
+      method: 'GET',
+      target: 'https://catfein.co.id/',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://meww.me/support',
+      statusPageLink: 'https://status-mewwme.is-a.fun/support',
     },
   ],
   notification: {
