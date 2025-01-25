@@ -38,7 +38,7 @@ const workerConfig = {
       id: 'restapi_monitor',
       name: 'RestAPI',
       method: 'GET',
-      target: 'http://104.219.236.211:7006/',
+      target: 'https://is-a.fun/',
       expectedCodes: [200],
       timeout: 30000,
       statusPageLink: 'https://status-mewwme.is-a.fun',
