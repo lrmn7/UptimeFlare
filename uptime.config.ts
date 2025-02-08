@@ -47,8 +47,8 @@ const workerConfig = {
     {
       id: 'lavalink_monitor',
       name: 'Voice Connection',
-      method: 'TCP_PING',
-      target: '104.219.236.211:7034',
+      method: 'GET',
+      target: 'http://lrmn.is-a.dev',
       timeout: 30000,
       statusPageLink: 'https://status-mewwme.is-a.fun/support',
     },
