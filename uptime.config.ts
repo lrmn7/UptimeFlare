@@ -3,10 +3,10 @@ const pageConfig = {
   title: "Mewwme's Uptime",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://mewwme.is-a.fun/', label: 'Home' },
+    { link: 'https://meww.me/', label: 'Home' },
     { link: 'https://github.com/mewwme', label: 'GitHub' },
-    { link: 'https://mewwme.is-a.fun/support', label: 'Server Support' },
-    { link: 'mailto:support-mewwme@is-a.fun', label: 'Email Me', highlight: true },
+    { link: 'https://meww.me/support', label: 'Server Support' },
+    { link: 'mailto:support-meww.me', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -18,17 +18,17 @@ const workerConfig = {
       id: 'website_monitor',
       name: `Mewwme's Website`,
       method: 'GET',
-      target: 'https://mewwme.is-a.fun',
+      target: 'https://mewwme-website.pages.dev/',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://mewwme.is-a.fun/',
+      statusPageLink: 'https:/status.meww.me/',
     },
     // Webserver bot
     {
       id: 'bot_monitor',
       name: 'Discord Bot',
       method: 'GET',
-      target: 'https://mikoradio.com',
+      target: 'https://mewwme-website.pages.dev/',
       expectedCodes: [200],
       timeout: 30000,
       statusPageLink: 'https://discord.com/oauth2/authorize?client_id=928966154817523723',
@@ -38,10 +38,10 @@ const workerConfig = {
       id: 'restapi_monitor',
       name: 'RestAPI',
       method: 'GET',
-      target: 'https://is-a.fun/',
+      target: 'https://mewwme-website.pages.dev/',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://status-mewwme.is-a.fun',
+      statusPageLink: 'https://status.meww.me',
     },
     // Lavalink
     {
@@ -50,17 +50,17 @@ const workerConfig = {
       method: 'GET',
       target: 'http://lrmn.is-a.dev',
       timeout: 30000,
-      statusPageLink: 'https://status-mewwme.is-a.fun/support',
+      statusPageLink: 'https://status.meww.me',
     },
     // Pterodactyl Panel
     {
       id: 'panel_monitor',
       name: 'Panel',
       method: 'GET',
-      target: 'https://mewwme.vercel.app/',
+      target: 'https://mewwme-website.pages.dev/',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://status-mewwme.is-a.fun/support',
+      statusPageLink: 'https://status.meww.me',
     },
     // Pterodactyl Wings
     {
@@ -70,7 +70,7 @@ const workerConfig = {
       target: 'https://hi-lrmn.is-a.dev/',
       expectedCodes: [200],
       timeout: 30000,
-      statusPageLink: 'https://status-mewwme.is-a.fun/support',
+      statusPageLink: 'https://status.meww.me',
     },
   ],
   notification: {
